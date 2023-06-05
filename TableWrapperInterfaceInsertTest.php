@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 require_once("autoload.php");
-use \PHPUnit\Framework\TestCase;
+include("vendor/autoload.php");
+
+use PHPUnit\Framework\TestCase;
 
 class TableWrapperInterfaceInsertTest extends TestCase {
   public function testInsert(array $values, mixed $expected): void {

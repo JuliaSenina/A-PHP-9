@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 require_once("autoload.php");
+include("vendor/autoload.php");
 
-use \PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class TableWrapperInterfaceDeleteTest extends TestCase {
   public function testDelete(int $id, mixed $expected): void {

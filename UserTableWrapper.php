@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+include("TableWrapperInterface.php");
 
 class UserTableWrapper implements TableWrapperInterface {
   public array $tableColumns = ['name', 'surname'];
